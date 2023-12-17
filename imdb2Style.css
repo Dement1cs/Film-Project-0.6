@@ -1,0 +1,264 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 17 дек. 2023 г., 01:24:17
+    Author     : Desktop
+*/
+body {
+    background-color: #1b1f24;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #873333;
+    width: 100%;
+    height: 100px;
+    padding: 0 15%;
+    box-sizing: border-box;
+}
+
+.logo {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.logoImg {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    width: 70%;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    color: #fcf0f0;
+    text-decoration: none;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.main{
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.content{
+    position: relative;
+    height: auto;
+    width:70%;
+    background-color: #3b434d;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b434d;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar label {
+    color: #fcf0f0;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 8px;
+    font-size: 18px;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #873333;
+    color: #fcf0f0;
+    cursor: pointer;
+    border: none;
+}
+
+#output{
+    background-color: #3b434d;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: #fcf0f0;
+}
+hr{
+    border: none;
+    background-color: #873333;
+    height: 5px;
+}
+.movie-details{
+    margin-bottom: 65px;
+}
+.movie-title{
+    background-color: #873333;
+    font-size: 50px;
+    margin-bottom: 0;
+
+}
+.movie-rating{
+    font-size: 20px;
+}
+.release-year{
+    font-size: 30px;
+}
+.movie-overview{
+    font-size: 25px;
+}
+
+
+.footer {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: #873333;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_container {
+    height: 100%;
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+.footer_content {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer_img {
+    float: right;
+    height: 400px;
+    width: 400px;
+}
+
+.footer_text {
+    font-size: 50px;
+    color: #fcf0f0;
+}
+
+
+.footer_text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_text li {
+    font-size: inherit;
+    margin-bottom: 10px;
+}
+
+/* media fo phone */
+@media only screen and (max-width: 480px) {
+
+    .header {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav_link {
+        margin: 5px 0;
+    }
+
+    .content {
+        width: 90%;
+    }
+    
+    .search-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3b434d;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .search-bar label {
+        color: #fcf0f0;
+        margin-bottom: 10px; 
+    }
+
+    .search-bar input,
+    .search-bar select,
+    .search-bar button {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    #output {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .movie-details {
+        margin-bottom: 35px;
+    }
+
+    .movie-title {
+        font-size: 30px;
+    }
+
+    .release-year {
+        font-size: 20px;
+    }
+
+    .movie-overview {
+        font-size: 15px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer {
+        height: 500px;
+        padding-top: 20px;
+    }
+    .footer_container {
+        height: 350px;
+    }
+    .footer_img {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer_text {
+        font-size: 15px;
+    }
+}

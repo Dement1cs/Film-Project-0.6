@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Data Fetch</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div id="output">
+    <!-- Display fetched movie data here -->
+</div>
+
+<script>
+    const apiKey = '4f56c4c4357a4192a62a65e7058464fd';
+
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+
+    // AJAX settings
+    const settings = {
+        async: true,
+        crossDomain: true,
+        url: url,
+        method: 'GET'
+    };
+
+    //AJAX request
+    $.ajax(settings).done(function (response) {
+        // Display response data
+        $('#output').html(JSON.stringify(response, null, 2));
+        console.log(response);
+    });
+</script>
+
+</body>
+</html>
